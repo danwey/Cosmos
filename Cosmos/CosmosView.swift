@@ -12,14 +12,14 @@ Example:
 Shows: ★★★★☆ (123)
 
 */
-@IBDesignable open class CosmosView: UIView {
+open class CosmosView: UIView {
     
   /**
   
   The currently shown number of stars, usually between 1 and 5. If the value is decimal the stars will be shown according to the Fill Mode setting.
 
   */
-  @IBInspectable open var rating: Double = CosmosDefaultSettings.rating {
+  open var rating: Double = CosmosDefaultSettings.rating {
     didSet {
       if oldValue != rating {
         update()
